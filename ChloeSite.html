@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click and Treat Training</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0; padding:0; height:100%;" onresize="onResize()" onload="initPage()">
+
+  <div id="main" style="margin:0; padding:0; height:100%;">
+    <img id="logo" src="./CATT.png" style="position:absolute; z-index:100; top:10px; left:10px; width:160px; height:160px; border:1px solid black; border-radius:80px; background-color:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+
+    <div id="mobileMenuButton"
+         style="position:fixed; top:10px; right:10px; width:32px; height:32px; z-index:1000; border:1px solid black; display:flex; flex-direction:column; justify-content:space-around; cursor:pointer; padding:8px; border-radius:8px; background-color:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); transition:box-shadow 0.3s ease, right 0.3s ease;"
+         onclick="toggleMenu()"
+         onmouseover="this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+         onmouseout="this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)';">
+      <div class="bar" style="width:100%; height:4px; background-color:#1a202c; border-radius:5px; transition:all 0.4s ease-in-out; transform-origin:center;"></div>
+      <div class="bar" style="width:100%; height:4px; background-color:#1a202c; border-radius:5px; transition:all 0.4s ease-in-out; transform-origin:center;"></div>
+      <div class="bar" style="width:100%; height:4px; background-color:#1a202c; border-radius:5px; transition:all 0.4s ease-in-out; transform-origin:center;"></div>
+    </div>
+
+    <div id="mobileMenu" style="opacity:0; z-index:200; transition:opacity 0.2s ease-in-out; position:fixed; top:0; width:100%; height:100%; background-color:#fff; pointer-events:none; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:40px;">
+      <div style="font-size:24px; cursor:pointer;">Home Page</div>
+      <div style="font-size:24px; cursor:pointer;">Contact Us</div>
+      <div style="font-size:24px; cursor:pointer;">Training Packages</div>
+      <div style="font-size:24px; cursor:pointer;">What I Offer</div>
+    </div>
+
+    <div id="header" style="height:600px; background-color:rgba(0,0,0,0.6); position:relative;">
+      <div id="desktopMenu" style="position:absolute; top:30px; right:30px; display:flex; gap:30px; flex-wrap:wrap; max-width:calc(100% - 200px); justify-content:right;">
+        <div style="color:white; font-size:18px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Home Page</div>
+        <div style="color:white; font-size:18px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Contact Us</div>
+        <div style="color:white; font-size:18px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Training Packages</div>
+        <div style="color:white; font-size:18px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">What I Offer</div>
+      </div>
+      <img class="backgroundImg" src="./Zuri-Header.jpg" style="width:100%; height:100%; position:absolute; z-index:-1; object-fit:cover;">
+      <div id="headerContents" style="opacity:0; padding-top:120px; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; transition:all 1s ease-in-out;">
+        <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:700; font-size:64px; color:white; text-align:center;">PERSONALISED 1-2-1 DOG TRAINING</div>
+        <div style="font-size:16px; color:white; text-align:center; font-family:'Roboto Mono', monospace;">Building trust, one click at a time!</div>
+        <div style="min-height:40px;"></div>
+        <div style="border:2px solid yellow; background-color:rgba(80,80,0,0.4); width:200px; height:80px; position:relative;">
+          <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid yellow; background-color:rgba(80,80,0,0.4); width:220px; height:60px; color:white; display:flex; justify-content:center; align-items:center; text-align:center; font-size:24px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+            Message Me on WhatsApp
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" style="width:calc(100% - 160px); min-height:600px; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:100px; padding:80px; background-color:#AFDEED;">
+      <img src="./Main1.jpg" style="min-width:460px; width:460px; height:460px; border-radius:230px; z-index:100;">
+      <div style="min-width:400px; max-width:800px; flex:1 1 400px; z-index:100; display:flex; flex-direction:column; text-align:center; align-items:left; gap:10px;">
+        <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:52px; color:rgba(60, 60, 60, 1);">Meet the trainer behind the treats</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">Hi, I'm Chloe, a positive reinforcement dog trainer, passionate about helping dogs and their owners build lasting, trust-based relationships.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">My training methods are force-free, reward-based, and adapted to suit your dog's personality. Whether you're working on puppy foundations, lead skills, recall, reactivity, confidence building, or muzzle training, I'm here to support you every step of the way.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">My dog, Zuri, is the reason behind everything I do. Her fear reactivity led me to the world of dog training, and through that journey, we built a deeper connection. Training not only helped her, it strengthened our relationship, helping us become best friends.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I offer one-on-one dog training and hope to one day expand my business to include a secure dog field and an indoor training space, providing a safe and enriching experience for every dog.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">Let's train with love and kindness, because good relationships start with trust.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I am a registered dog trainer with the <b>Animal Behaviour & Training Council (ABTC)</b>, with over six years of hands-on experience working with and training dogs through two of the UK's largest animal welfare charities.</div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">My qualifications include:
+            <ul>
+                <li><b>Canine Behaviour Professional - Accredited Diploma</b></li>
+                <li><b>Canine Reactive Behaviour - Accredited Advanced Certificate</b></li>
+                <li><b>CPD Certified - Canine Fear Course</b></li>
+                <li><b>Animal First Aid Trained</b></li>
+                <li><b>Currently studying:</b>  Level 4 Diploma in Canine Welfare, Training & Behaviour</li>
+                <li><b>Professional Member</b> of the <b>National Institute for Canine Ethics</b></li>
+            </ul>
+        </div>
+        <br>
+        <div style="font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">With a strong foundation in both practical experience and academic learning, I am dedicated to promoting ethical, welfare-focused dog training.</div>
+        <br>
+        <div style="display:flex; flex-wrap:wrap; width:100%; min-height:80px; gap:20px; justify-content:center;">
+            <img src="./Cert1.jpg" style="height:160px; border:solid black 1px; border-radius:4px;">
+            <img src="./Cert2.png" style="height:160px; border:solid black 1px; border-radius:4px;">
+            <img src="./Cert3.png" style="height:160px; border:solid black 1px; border-radius:4px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="divider" style="width:100%; height:60px; background-color:#AFDEED;">
+        <svg width="100%" height="60" viewBox="0 0 100 60" preserveAspectRatio="none">
+            <path d="M0 60 Q50 -20 100 60 Z" stroke-width="1" fill="#F0F0F0"/>
+        </svg>
+    </div>
+
+
+    <div class="main" style="width:calc(100% - 160px); display:flex; flex-direction:column; align-items:center; gap:100px; padding:80px; background-color:#F0F0F0;">
+        <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:52px; color:rgba(60, 60, 60, 1); text-align:center;">Why choose Click and Treat Training?</div>
+        <div style="width:100%; max-width:calc(100% - 80px); display:flex; flex-wrap:wrap; gap:120px; justify-content:center;">
+
+            <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
+                <img src="./WhoAre1.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:4px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">Qualified</div>
+                <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I am very committed to continuing to work through CPD to keep up to date with all the latest methods in the dog training world. I am animal first aid trained, meaning I can assist in situations that may arise that I need to. I am a registered dog trainer with the ABTC (Animal Behaviour & Training Council). I am a part of the International Institute for Canine Ethics, dedicated to promoting humane, respectful, and scientifically based practices in training. As a member, I need to uphold the highest standards of animal ethics, help advocate for responsible ownership, and share knowledge to improve the lives of dogs worldwide.</div>
+            </div>
+
+            <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
+                <img src="./WhoAre2.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:200px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">Supportive</div>
+                <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I know how challenging it can be to have a reactive dog, the frustration, the worry, and even it can even be embarrassing. I’ve been in your shoes. You might wonder if you’re doing enough for your dog, or if you’re doing the right things. I’m here to offer support and understanding every step of the way!</div>
+            </div>
+
+            <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
+                <img src="./WhoAre3.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:4px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">I love what I do</div>
+                <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I believe training should be positive, practical, and fun. My passion comes from watching dogs thrive and families grow closer through trust, patience, and consistency.<br><br>Training should be a fun skill and shouldn't feel like a chore.<br><br>Let's train together and have a good time while achieving goals.<br><br>I have learnt so much over the years doing what I do, and would love to put this knowledge to good use and help educate dog owners like you.<br><br>So what are you waiting for? Contact me today and let's begin.</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="footer" style="width:100%; height:40px; background-color:lightgrey;"></div>
+
+  </div>
+
+  <script>
+    function initPage() {
+      document.getElementById("headerContents").style.opacity = 1;
+      document.getElementById("headerContents").style.paddingTop = "40px";
+      onResize();
+    }
+
+    function toggleMenu() {
+      const mobileMenuButton = document.getElementById('mobileMenuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const bars = mobileMenuButton.children;
+
+      const isOpen = mobileMenuButton.dataset.open === "true";
+      if (!isOpen) {
+        mobileMenuButton.style.right = "calc(50% - 24px)";
+        bars[0].style.transform = "translateY(11px) rotate(45deg)";
+        bars[1].style.opacity = 0;
+        bars[2].style.transform = "translateY(-11px) rotate(-45deg)";
+        mobileMenu.style.opacity = 1;
+        mobileMenu.style.pointerEvents = "auto";
+        mobileMenuButton.dataset.open = "true";
+      } else {
+        mobileMenuButton.style.right = "10px";
+        bars[0].style.transform = "";
+        bars[1].style.opacity = 1;
+        bars[2].style.transform = "";
+        mobileMenu.style.opacity = 0;
+        setTimeout(() => mobileMenu.style.pointerEvents = "none", 400);
+        mobileMenuButton.dataset.open = "false";
+      }
+    }
+
+    function onResize() {
+      const mobileMenuButton = document.getElementById('mobileMenuButton');
+      const desktopMenu = document.getElementById('desktopMenu');
+      mobileMenuButton.style.display = (innerWidth > innerHeight) ? "none" : "flex";
+      desktopMenu.style.display = (innerWidth > innerHeight) ? "flex" : "none";
+    }
+  </script>
+
+</body>
+</html>
