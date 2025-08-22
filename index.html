@@ -26,18 +26,12 @@
     </div>
 
     <div id="mobileMenu" style="opacity:0; z-index:200; transition:opacity 0.2s ease-in-out; position:fixed; top:0; width:100%; height:100%; background-color:#fff; pointer-events:none; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:40px;">
-      <div style="font-size:24px; cursor:pointer;">Home Page</div>
-      <div style="font-size:24px; cursor:pointer;">Contact Us</div>
-      <div style="font-size:24px; cursor:pointer;">Training Packages</div>
-      <div style="font-size:24px; cursor:pointer;">What I Offer</div>
+      <div onclick="document.getElementById('trainingPackages').scrollIntoView({ behavior: 'smooth' });" style="font-size:24px; cursor:pointer;">Training Packages</div>
     </div>
 
     <div id="header" style="height:600px; background-color:rgba(0,0,0,0.6); position:relative;">
       <div id="desktopMenu" style="position:absolute; top:30px; right:30px; display:flex; gap:30px; flex-wrap:wrap; max-width:calc(100% - 200px); justify-content:right;">
-        <div style="color:white; font-size:16px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Home Page</div>
-        <div style="color:white; font-size:16px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Contact Us</div>
-        <div style="color:white; font-size:16px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Training Packages</div>
-        <div style="color:white; font-size:16px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">What I Offer</div>
+        <div onclick="document.getElementById('trainingPackages').scrollIntoView({ behavior: 'smooth' });" style="color:white; font-size:16px; cursor:pointer; max-width:180px; text-align:center; font-family:'Roboto Mono', monospace;">Training Packages</div>
       </div>
       <img class="backgroundImg" src="./Zuri-Header.jpg" style="width:100%; height:100%; position:absolute; z-index:-1; object-fit:cover;">
       <div id="headerContents" style="opacity:0; padding-top:120px; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; transition:all 1s ease-in-out;">
@@ -103,19 +97,19 @@
 
             <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
                 <img src="./WhoAre1.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:4px;">
-                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">Qualified</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:32px; color:rgba(60, 60, 60, 1); text-align:center;">Qualified</div>
                 <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I am very committed to continuing to work through CPD to keep up to date with all the latest methods in the dog training world. I am animal first aid trained, meaning I can assist in situations that may arise that I need to. I am a registered dog trainer with the ABTC (Animal Behaviour & Training Council). I am a part of the International Institute for Canine Ethics, dedicated to promoting humane, respectful, and scientifically based practices in training. As a member, I need to uphold the highest standards of animal ethics, help advocate for responsible ownership, and share knowledge to improve the lives of dogs worldwide.</div>
             </div>
 
             <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
                 <img src="./WhoAre2.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:200px;">
-                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">Supportive</div>
-                <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I know how challenging it can be to have a reactive dog, the frustration, the worry, and even it can even be embarrassing. I’ve been in your shoes. You might wonder if you’re doing enough for your dog, or if you’re doing the right things. I’m here to offer support and understanding every step of the way!</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:32px; color:rgba(60, 60, 60, 1); text-align:center;">Supportive</div>
+                <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I know how challenging it can be to have a reactive dog, the frustration, the worry, and even it can even be embarrassing. I've been in your shoes. You might wonder if you're doing enough for your dog, or if you're doing the right things. I'm here to offer support and understanding every step of the way!</div>
             </div>
 
             <div style="min-width:300px; display:flex; flex-direction:column; gap:20px; align-items:center;">
                 <img src="./WhoAre3.jpg" style="height:300px; width:300px; border:solid black 1px; border-radius:4px;">
-                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:28px; color:rgba(60, 60, 60, 1); text-align:center;">I love what I do</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:32px; color:rgba(60, 60, 60, 1); text-align:center;">I love what I do</div>
                 <div style="width:300px; font-size:14px; text-align:center; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I believe training should be positive, practical, and fun. My passion comes from watching dogs thrive and families grow closer through trust, patience, and consistency.<br><br>Training should be a fun skill and shouldn't feel like a chore.<br><br>Let's train together and have a good time while achieving goals.<br><br>I have learnt so much over the years doing what I do, and would love to put this knowledge to good use and help educate dog owners like you.<br><br>So what are you waiting for? Contact me today and let's begin.</div>
             </div>
 
@@ -123,6 +117,143 @@
     </div>
 
 
+    <div class="divider" style="width:100%; height:60px; background-color:#F0F0F0;">
+        <svg width="100%" height="60" viewBox="0 0 100 60" preserveAspectRatio="none">
+            <path d="M0 60 Q50 -20 100 60 Z" stroke-width="1" fill="#F7F3B7"/>
+        </svg>
+    </div>
+
+    <div id="trainingPackages" class="main" style="width:calc(100% - 160px); display:flex; flex-direction:column; align-items:center; gap:100px; padding:80px; background-color:#F7F3B7;">
+        <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:52px; color:rgba(60, 60, 60, 1); text-align:center;">Training Packages</div>
+        <div style="width:100%; max-width:calc(100% - 80px); display:flex; flex-wrap:wrap; gap:120px; justify-content:center;">
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">1-2-1 Training package</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£120.00</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">Are you struggling with jumping up, lead pulling, getting your dog to settle, engagement around distractions or much more? Then this package is for you. Each session is personalised to help you see real progress. With guidance, support, and practical techniques, we'll work together to strengthen your relationship and set you up for long-term success.</div>
+                <ul style="list-style:none; padding-left:0; text-align:left; width:340px;">
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Initial 1-hour consultation</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>2-3 following sessions</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Guidance and practical hands-on sessions</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Downloadable unique training plan</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Support in-between sessions</li>
+                </ul>
+            </div>
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">Basic Training Package</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£100.00</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">We'll work together on the essential skills every dog needs for everyday life.<br><br>This package includes teaching, recall, attention to name, loose lead walking, basic training such as paw, down, sit, wait, and engagement. Each session is tailored to suit you and your dog's learning pace. This package is perfect for building strong foundations, boosting confidence, and creating a well-mannered, happy dog.</div>
+                <ul style="list-style:none; padding-left:0; text-align:left; width:340px;">
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Initial 1-hour consultation</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>2-3 following sessions</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Hands-on sessions to teach you and your dog</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Downloadable unique training plan</li>
+                </ul>
+            </div>
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">Puppy Package</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£75.00</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">Want to start your puppy off on the right paw with training that builds confidence, good manners, and a strong relationship from day one. We will give you the tools and guidance to raise a happy, well-adjusted dog who's ready to take on the world with you.</div>
+                <ul style="list-style:none; padding-left:0; text-align:left; width:340px;">
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Sessions offered for puppies at 8-16 weeks</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Sessions offered for puppies at 4-6 months</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>An initial consultation (30 mins)</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>We'll cover all the puppy essentials</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>2 follow-up sessions at each age bracket.</li>
+                </ul>
+            </div>
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">Reactive Dog Package</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£120.00</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">This package is designed to help you and your dog build confidence, trust, and calmness in everyday situations. Whether your dog barks, lunges, or struggles to focus around triggers, we'll work together using positive, force-free training techniques tailored to your dog's needs.</div>
+                <ul style="list-style:none; padding-left:0; text-align:left; width:340px;">
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Guided training sessions</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Emotional support every step of the way</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>1 hour initial consultation</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>3-4 additional training sessions</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Downloadable unique training plan</li>
+                </ul>
+            </div>
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">One-off Session / Extra session</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£50.00 per extra session</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">Perfect for quick advice or as an add-on to a package you're already working through, these sessions give you extra time and guidance when you need it most.<br>Whether you'd like to check in with me with your dog's progress, tackle a new challenge, or get reassurance on your training approach, I'm here to offer tailored support.<br><br>This option can be booked as a one-off training session or as an add-on to your existing package. It includes a one-hour session, held either in your home or in a suitable local area for practical training.</div>
+            </div>
+
+            <div style="min-width:380px; display:flex; flex-direction:column; gap:20px; align-items:center; border:solid #D6CF63 2px; padding:10px;">
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:46px; color:rgba(60, 60, 60, 1); text-align:center;">Muzzle Training</div>
+                <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:26px; color:rgba(60, 60, 60, 1); text-align:center;">£30.00</div>
+                <br>
+                <div style="border:2px solid white; width:200px; height:60px; position:relative;">
+                    <div onclick="window.location.href = 'https://wa.me/447861161510';" style="position:relative; top:8px; left:-12px; border:2px solid white; width:220px; height:40px; display:flex; justify-content:center; align-items:center; text-align:center; font-size:16px; cursor:pointer; font-family:'Roboto Mono', monospace;">
+                        Select this Package
+                    </div>
+                </div>
+                <br>
+                <div style="width:300px; font-size:14px; text-align:left; font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);">I offer positive muzzle training support to help your dog feel comfortable and confident wearing a muzzle. Using reward-based methods, I'll guide you through each step so your dog learns to see the muzzle as a safe and positive part of their routine.</div>
+                <ul style="list-style:none; padding-left:0; text-align:left; width:340px;">
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Initial consultation (45 mins)</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Printable and downloadable template training guide</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>Muzzle fitting advice</li>
+                    <li style="font-family:'Roboto Mono', monospace; color:rgba(60, 60, 60, 1);  font-size:12px;"><span style="color:green; font-size:22px; margin-right:10px;">✔</span>One-off bookable session or support from start to finish (multiple sessions at 45 mins each)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider" style="width:100%; height:60px; background-color:#F7F3B7;">
+        <svg width="100%" height="60" viewBox="0 0 100 60" preserveAspectRatio="none">
+            <path d="M0 60 Q50 -20 100 60 Z" stroke-width="1" fill="#F0F0F0"/>
+        </svg>
+    </div>
+
+    <div class="main" style="width:calc(100% - 160px); display:flex; flex-direction:column; align-items:center; gap:100px; padding:80px; background-color:#F0F0F0;">
+        <div class="customFont" style="font-family:'Amatic SC', sans-serif; font-weight:900; font-size:52px; color:rgba(60, 60, 60, 1); text-align:center;">Contact Us</div>
+        <div style="width:100%; max-width:calc(100% - 80px); display:flex; flex-wrap:wrap; gap:120px; justify-content:center;">
+
+
+        </div>
+    </div>
 
     <div id="footer" style="width:100%; height:40px; background-color:lightgrey;"></div>
 
